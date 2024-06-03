@@ -3,6 +3,10 @@
 # -------------------------------------------
 # New repository data_test_access added to git on 2023-11-20
 
+Tag: V00-00-02
+2024-06-03 Mikhail Dubrovin
+- in src/absolute_path.py add path_to_calibdir
+
 Tag: V00-00-01
 2023-11-20 Mikhail Dubrovin
 - reorganize data_test repository

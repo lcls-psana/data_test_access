@@ -24,6 +24,7 @@ import os
 
 #DIR_DATA_TEST = os.path.dirname(path).strip('src')
 DIR_DATA_TEST = '/tmp/data_test'
+DIR_CALIB = '/tmp/data_test/calib'
 DIR_XTC_TEST = os.path.join(DIR_DATA_TEST, 'xtc')  # /sdf/home/d/dubrovin/LCLS/con-py3/data_test/xtc/ <<< for test release
 
 #DIR_DATA_TEST = os.path.abspath(os.path.dirname(__file__)).strip('src')
@@ -31,6 +32,9 @@ DIR_XTC_TEST = os.path.join(DIR_DATA_TEST, 'xtc')  # /sdf/home/d/dubrovin/LCLS/c
 
 def path_to_xtc_test_file(fname='data-xppn4116-r0137-3events-epix100a.xtc'):
     return os.path.join(DIR_XTC_TEST, fname)
+
+def path_to_calibdir():
+    return DIR_CALIB
 
 if __name__ == '__main__':
     print('DIR_DATA_TEST: %s' % DIR_DATA_TEST\
